@@ -1,0 +1,74 @@
+
+*{
+    box-sizing: border-box;
+}
+/*
+body {
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+}
+h3{
+    font-weight: bold;
+}
+.forecast{ 
+    font-size: 0.9em;
+}
+span{
+    font-size: 1em;
+}
+li:hover{
+    background-color: lightslategray;
+    text-decoration: underline;
+}*/
+
+/* start of css */
+.dashboard-title {
+    background-color: rgb(78, 78, 78);
+    color: white;
+    text-align: center;
+    padding: 18px;
+    font-weight: lighter;
+    margin-right: 30px;
+    margin-left: 14px;
+
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+}
+.col-sm-8 {
+    padding-top: 10px;
+}
+.row {
+    width: 100%;
+}
+.current-weather-container {
+    display: flex;
+    height: 19rem;
+    border: 1px solid rgba(7, 7, 7, 0.2);
+    border-radius: 10px;
+}
+.card {
+    border: none;
+}
+.card-header {
+    padding: 5px 0px 5px 0px;
+    border-bottom: none;
+    font-size: 25px;
+}
+
+.btn {
+    border: 1px solid olivedrab;
+}
+.searchBtn {
+    background: rgb(25, 127, 243);
+    color: white;
+    border: 3px solid rgba(115, 197, 235, 0.829);
+    border-radius: 10px;
+}
+
+hr {
+    border-top: 1px solid black;
+    opacity: 0.3;
+}
