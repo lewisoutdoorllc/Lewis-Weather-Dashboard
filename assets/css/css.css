@@ -72,3 +72,22 @@ hr {
     border-top: 1px solid black;
     opacity: 0.3;
 }
+
+span {
+    background-color: green;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.favorable{
+background-color: green;
+}
+
+.moderate {
+background-color: yellow;
+}
+
+.severe {
+background-color: red;
+}
+

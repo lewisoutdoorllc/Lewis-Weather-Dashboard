@@ -1,72 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- external stylesheets start -->
-<link
-    rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
-<link
-    rel="stylesheet"
-    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-    crossorigin="anonymous"/>
-<link
-    href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-    rel="stylesheet"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
     <!-- external stylesheets end -->
     <!-- local stylesheets start -->
-<link rel="stylesheet" href="./assets/css/css.css" />
+    <link rel="stylesheet" href="./assets/css/css.css" />
     <!-- local stylesheets end -->
     <title>Weather Dashboard</title>
 
 </head>
+
 <body class="flex-column min-100-vh">
     <header class="hero">
         <h1 class="dashboard-title">Weather Dashboard</h1>
     </header>
 
-<main class="container">
-    <div class="row">
-        <div class="col col-md-12">
-            <div class="card">
-                <h3 class="card-header">Search for a City:</h3>
-                <div id="search-form" class="search">
-                    <input id="city-search" class="city-search-input" type="text" autofocus="true" />
-                    <button onclick="myFunction()" id="search-button" class="btn searchBtn"><i class="fas fa-search"></i></button>
+    <main class="container">
+        <div class="row">
+            <div class="col col-md-12">
+                <div class="card">
+                    <h3 class="card-header">Search for a City:</h3>
+                    <div id="search-form" class="search">
+                        <input id="city-search" class="city-search-input" type="text" autofocus="true" />
+                        <button onclick="myFunction()" id="search-button" class="btn searchBtn"><i
+                                class="fas fa-search"></i></button>
+                    </div>
                 </div>
-            </div>
-            <div class="card"></div>
+                <div class="card"></div>
                 <div id="city-choices" class="city-choice-buttons">
-                    <button city-data="clear-history" class="btn">Clear History</button>
-                    <!-- list section to display city search history for user recall -->
-                    <div id="history-container" class="city-history-list">
+                    <section id="button"></section>
+
+                    <div id="search-history" class="search-history-list">
 
                     </div>
                 </div>
             </div>
         </div>
-    </div>
         <div class="col col-md-8">
             <div class="current-weather-container">
-                <div id="current-weather"></div>
+                <div id="current-weather"><textarea> </textarea></div>
                 <div id="uv-display-styles"></div>
-            </div>   
+            </div>
             <br>
             <hr>
             <br>
             <h2>5-Day Forecast</h2>
             <div id="5day" class="row">
-                
+
             </div>
         </div>
-    </div>
-</main>
+
+    </main>
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="assets/js/javascript.js"></script>      
+    <script src="assets/js/javascript.js"></script>
 </body>
+
 </html>
