@@ -8,7 +8,7 @@ var memorySet = function () {
 }
 
 var memoryLoad = function () {
-    citySeachHistory = JSON.parse(localStorage.getItem("citySearchHistory")) || [];
+    citySearchHistory = JSON.parse(localStorage.getItem("citySearchHistory")) || [];
 }
 /*
 var getHistory = function (event) {
@@ -166,3 +166,13 @@ $("#search-history").on("click", function (event) {
     var btn = event.target
     myFunction(btn.textContent);
 });
+
+$(document).ready(function() {
+    memoryLoad();
+    for (let index = 0; index < citySearchHistory.length; index++) {
+        const element = citySearchHistory[index];
+        add(element);
+        
+    }
+});
+

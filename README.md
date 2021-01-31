@@ -33,7 +33,7 @@ Styles provided were sufficent; any changes in the future will be updated here..
 
 ## JavaScript Changes
 
-JavaScript along with implementing jquery is were we implemented all the working of the scheduler so the information could be inputted, saved, stored, recalled, and edited when needed. 
+JavaScript along with implementing jquery is were we implemented all the working of the weather dashboard so the information could be inputted, saved, stored, recalled, and edited when needed. 
 
 ## Link to site
 
@@ -48,11 +48,11 @@ https://github.com/lewisoutdoorllc/Lewis-Weather-Dashboard
 
 ## Credits
 
-Thanks for all the help from Kip, Nick, Carlos, and Howard on this little venture for making this happen.. Always fun!! Cheers..
+Thanks for all the help from Kip, Nick, Carlos, and Anthony on this little venture for making this happen.. Always fun!! Cheers..
 
 //  Links that helped get to the proper conclusion for providing the solutions to our users requirements..
 
-Kip, Nick, Carlos, and Howard
+Kip, Nick, Carlos, and Anthony
 
 ## License
 
