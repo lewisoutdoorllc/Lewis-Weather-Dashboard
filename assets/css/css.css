@@ -75,7 +75,8 @@ hr {
 
 span {
     background-color: green;
-    border-radius: 15px;
+    color: white;
+    border-radius: 8px;
     padding: 5px;
 }
 
@@ -91,3 +92,11 @@ background-color: yellow;
 background-color: red;
 }
 
+/*
+#current-weather,
+#future-weather,
+#hr-hide
+ {
+  display: none;
+}
+*/
