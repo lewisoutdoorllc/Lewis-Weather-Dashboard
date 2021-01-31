@@ -80,6 +80,8 @@ function myFunction() {
                     }
                     add();
 
+                    document.querySelector("")
+
                     fetch('https://api.openweathermap.org/data/2.5/onecall?lat=' + data.coord.lat + '&lon=' + data.coord.lon + '&exclude=hourly,minutely,alerts&units=imperial&appid=a4dc6b4797cfe0a360daceabbd77f8dc'
                     )
                         .then(function (response) {

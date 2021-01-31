@@ -80,6 +80,13 @@ span {
     padding: 5px;
 }
 
+#five-day-span-style {
+    background: none;
+}
+
+.date-style {
+    font-size: 20px;
+}
 .favorable{
 background-color: green;
 }
