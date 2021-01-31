@@ -44,7 +44,7 @@ https://github.com/lewisoutdoorllc/Lewis-Weather-Dashboard
 
 ## Screenshot of landing page
 
-![alt text](assets\images\screenShot1.png)
+![alt text](./assets/images/screenShot1.png)
 
 ## Credits
 
