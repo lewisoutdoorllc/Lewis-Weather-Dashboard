@@ -37,6 +37,18 @@ li:hover{
     justify-content: space-between;
     max-width: 100%;
 }
+.searchBtn {
+    background: rgb(25, 127, 243);
+    color: white;
+    border: 3px solid rgba(115, 197, 235, 0.829);
+    border-radius: 10px;
+}
+.city-search-input {
+    width: 75%;
+}
+div.col-sm-4 {
+    overflow: hidden;
+}
 .col-sm-8 {
     padding-top: 10px;
 }
@@ -49,30 +61,7 @@ li:hover{
     border: 1px solid rgba(7, 7, 7, 0.2);
     border-radius: 10px;
 }
-.card {
-    border: none;
-}
-.card-header {
-    padding: 5px 0px 5px 0px;
-    border-bottom: none;
-    font-size: 25px;
-}
-
-.btn {
-    border: 1px solid olivedrab;
-}
-.searchBtn {
-    background: rgb(25, 127, 243);
-    color: white;
-    border: 3px solid rgba(115, 197, 235, 0.829);
-    border-radius: 10px;
-}
-
-hr {
-    border-top: 1px solid black;
-    opacity: 0.3;
-}
-
+/* uv index styles start*/
 span {
     background-color: green;
     color: white;
@@ -84,20 +73,45 @@ span {
     background: none;
 }
 
-.date-style {
-    font-size: 20px;
-}
 .favorable{
 background-color: green;
+color: white;
+font-weight: bold;
 }
 
 .moderate {
 background-color: yellow;
+color: grey;
+font-weight: bold;
 }
 
 .severe {
 background-color: red;
+color: white;
+font-weight: bold;
 }
+/* uv index styles end*/
+
+hr {
+    border-top: 1px solid black;
+    opacity: 0.3;
+}
+
+img {
+    width: 70px;
+}
+
+.date-style {
+    font-size: 20px;
+}
+.current-weather-container {
+    padding-left: 20px;
+}
+
+
+
+
+
 
 /*
 #current-weather,
