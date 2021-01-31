@@ -10,19 +10,23 @@ var memorySet = function () {
 var memoryLoad = function () {
     citySeachHistory = JSON.parse(localStorage.getItem("citySearchHistory")) || [];
 }
-
-function add(cityName) {
-    var element = document.createElement("button");
-    element.textContent = cityName;
-    element.classList.add("historyChoice");
-    element.id = "data-history";
-    element.setAttribute("value", cityName),
-        document.getElementById("button").appendChild(element);
-
-    console.log(cityName)
+/*
+var getHistory = function (event) {
+    var city = event.target.textContent
+    document.querySelector("#city-search").value = city;
+    console.log(city)
 }
-function myFunction() {
-    let cityName = document.querySelector('#city-search').value;
+*/
+function add(cityName) {
+    var element = document.createElement("li");
+    element.textContent = cityName;
+    element.setAttribute("value", cityName),
+        element.setAttribute("class", "list-group-item");
+    document.getElementById("search-history").appendChild(element);
+}
+
+function myFunction(cityName) {
+    //let cityName = document.querySelector('#city-search').value;
 
 
     fetch(
@@ -48,10 +52,10 @@ function myFunction() {
             }
             if (!duplicate) {
                 citySearchHistory.push(cityName);
-                // SET TO STORGE WITH cityName
+                // set to storage //
                 memorySet()
+                add(cityName);
             }
-            //
             fetch('https://api.openweathermap.org/data/2.5/uvi?lat=' + data.coord.lat + '&lon=' + data.coord.lon + '&units=imperial&appid=a4dc6b4797cfe0a360daceabbd77f8dc'
             )
                 .then(function (response) {
@@ -90,15 +94,6 @@ function myFunction() {
                     // function to change uv index background color end //
 
 
-                    function add() {
-                        var element = document.createElement("li");
-                        element.textContent = cityName;
-                        element.setAttribute("value", cityName),
-                            element.setAttribute("class", "list-group-item");
-                        document.getElementById("search-history").appendChild(element);
-
-                    }
-                    add();
 
 
                     fetch('https://api.openweathermap.org/data/2.5/onecall?lat=' + data.coord.lat + '&lon=' + data.coord.lon + '&exclude=hourly,minutely,alerts&units=imperial&appid=a4dc6b4797cfe0a360daceabbd77f8dc'
@@ -161,5 +156,13 @@ function myFunction() {
 
         });
 }
-
-
+// button listener for search //
+$("#search-button").on("click", function () {
+    let cityName = document.querySelector('#city-search').value;
+    myFunction(cityName);
+});
+// button listener for populated list //
+$("#search-history").on("click", function (event) {
+    var btn = event.target
+    myFunction(btn.textContent);
+});
