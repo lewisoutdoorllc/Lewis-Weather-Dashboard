@@ -1,7 +1,6 @@
-//moment().format('L');
+
 
 var citySearchHistory = []
-
 
 var memorySet = function () {
     localStorage.setItem("citySearchHistory", JSON.stringify(citySearchHistory))
@@ -10,13 +9,7 @@ var memorySet = function () {
 var memoryLoad = function () {
     citySearchHistory = JSON.parse(localStorage.getItem("citySearchHistory")) || [];
 }
-/*
-var getHistory = function (event) {
-    var city = event.target.textContent
-    document.querySelector("#city-search").value = city;
-    console.log(city)
-}
-*/
+
 function add(cityName) {
     var element = document.createElement("li");
     element.textContent = cityName;
@@ -111,28 +104,28 @@ function myFunction(cityName) {
                             document.getElementById("day-1-icon").setAttribute("src", url);
                             document.querySelector(".temp-1").textContent = fiveDayForecast.daily[1].temp.max;
                             document.querySelector(".hum-1").textContent = fiveDayForecast.daily[1].humidity;
-                            // future 5 day forecast day 1 //
+                            // future 5 day forecast day 2 //
                             var forecastIcon = fiveDayForecast.daily[2].weather[0].icon
                             var url = "https://openweathermap.org/img/wn/" + forecastIcon + ".png"
                             document.getElementById("day-2").textContent = moment().add(2, "day").format("L");
                             document.getElementById("day-2-icon").setAttribute("src", url);
                             document.querySelector(".temp-2").textContent = fiveDayForecast.daily[2].temp.max;
                             document.querySelector(".hum-2").textContent = fiveDayForecast.daily[2].humidity;
-                            // future 5 day forecast day 1 //
+                            // future 5 day forecast day 3 //
                             var forecastIcon = fiveDayForecast.daily[3].weather[0].icon
                             var url = "https://openweathermap.org/img/wn/" + forecastIcon + ".png"
                             document.getElementById("day-3").textContent = moment().add(3, "day").format("L");
                             document.getElementById("day-3-icon").setAttribute("src", url);
                             document.querySelector(".temp-3").textContent = fiveDayForecast.daily[3].temp.max;
                             document.querySelector(".hum-3").textContent = fiveDayForecast.daily[3].humidity;
-                            // future 5 day forecast day 1 //
+                            // future 5 day forecast day 4 //
                             var forecastIcon = fiveDayForecast.daily[4].weather[0].icon
                             var url = "https://openweathermap.org/img/wn/" + forecastIcon + ".png"
                             document.getElementById("day-4").textContent = moment().add(4, "day").format("L");
                             document.getElementById("day-4-icon").setAttribute("src", url);
                             document.querySelector(".temp-4").textContent = fiveDayForecast.daily[4].temp.max;
                             document.querySelector(".hum-4").textContent = fiveDayForecast.daily[4].humidity;
-                            // future 5 day forecast day 1 //
+                            // future 5 day forecast day 5 //
                             var forecastIcon = fiveDayForecast.daily[5].weather[0].icon
                             var url = "https://openweathermap.org/img/wn/" + forecastIcon + ".png"
                             document.getElementById("day-5").textContent = moment().add(5, "day").format("L");
@@ -140,7 +133,7 @@ function myFunction(cityName) {
                             document.querySelector(".temp-5").textContent = fiveDayForecast.daily[5].temp.max;
                             document.querySelector(".hum-5").textContent = fiveDayForecast.daily[5].humidity;
 
-                            // current day append image to //
+                            // current day append image to current weather //
                             var forecastIcon = fiveDayForecast.daily[0].weather[0].icon
                             var url = "https://openweathermap.org/img/wn/" + forecastIcon + ".png"
                             var image = $('<img>')
@@ -168,13 +161,13 @@ $("#search-history").on("click", function (event) {
     var btn = event.target
     myFunction(btn.textContent);
 });
-
-$(document).ready(function() {
+// calls on right side hidden elements that are hidden in css when user selects an input  //
+$(document).ready(function () {
     memoryLoad();
     for (let index = 0; index < citySearchHistory.length; index++) {
         const element = citySearchHistory[index];
         add(element);
-        
+
     }
 });
 
