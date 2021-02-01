@@ -3,37 +3,35 @@
 ## Table of Contents 
 
 * [Installation](#installation)
-* [Html changes](#html-changes)
-* [CSS changes](#css-changes)
-* [JavaScript changes](#javascript-changes)
+* [Html](#html)
+* [CSS](#css)
+* [JavaScript](#javascript)
 * [Link to site](#link-to-site)
 * [Screenshot](#screenshot-of-landing-page)
 * [Credits](#credits)
 * [License](#license)
 
 
-I finished this project using some existing code provided to develop a work day scheduler so as to provide an employee with the opportuniy to plan the day and to help make them more productive. The planner allows for the user to add mutiple task for each hour of the work day; the scheduler uses work hours from 9 to 5. At the start of the work day at 9 am the block will be red and upcoming hours will be green. As the hours progress the red block hour will indicate the working hour or active hour of the day. Past hours will start showing with a gray background and upcoming hours will continue to show up as green. When the user inputs there information into an hour block they have the option to save and store the information and it will be stored with the abilty to open in another tab or be refreshed without losing there information. Lastly they can change the existing information they have saved and edit it and save the new changes.
-
-We used bootstrap and font awesome to help us with styles on this and moment for the date, time, clock aspects.
+This weather dashboard was made to allow the user to obtain the current weather for a city of there choice and provide a 5 day future forcast so they can plan there travel. It provides the user the ability to see current temperature, humidity, wind speed, and uv index; the uv index is also indicated by green, yellow, and red depending on severity. The future 5 day forcast provides the user with the dates, weather conditions, temperatures, and humidity. Finally the search history of the user is logged and displayed on the right side in a list that is populated based on the users searches. 
 
 ## Installation
 
 Click the link to site in this README and it will take you to the landing page for the site. 
 
-## Html changes
+## Html
 
-// Html changes //
+// Html//
 
-Installed timeblocks for the hours, description, and save. This was done with rows and colums; any changes in the future will be updated here...
+Used bootstrap to lay out the rows and colums and some styles with the best of my ablity; any changes in the future will be updated here...
 
-## CSS changes
-/* CSS changes */ 
+## CSS
+/* CSS */ 
 
-Styles provided were sufficent; any changes in the future will be updated here...
+Styles were inputted to make the user experience more enjoyable and to provide a clean apperance; any changes in the future will be updated here...
 
-## JavaScript Changes
+## JavaScript
 
-JavaScript along with implementing jquery is were we implemented all the working of the weather dashboard so the information could be inputted, saved, stored, recalled, and edited when needed. 
+JavaScript along with implementing jquery is were we implemented all the working of the weather dashboard so the information could be inputted, saved, stored, and recalled when needed. 
 
 ## Link to site
 
