@@ -67,9 +67,9 @@ function myFunction(cityName) {
                     var mainDate = moment().format('L');
                     var cityNameEl = $("<h2>").text(data.name);
                     var displayMainDate = cityNameEl.append(" " + mainDate);
-                    var tempEL = $("<p>").text("Tempature: " + data.main.temp);
-                    var humEl = $("<p>").text("Humidity: " + data.main.humidity);
-                    var windEl = $("<p>").text("Wind Speed: " + data.wind.speed);
+                    var tempEL = $("<p>").text("Tempature: " + data.main.temp + " °F");
+                    var humEl = $("<p>").text("Humidity: " + data.main.humidity + " %");
+                    var windEl = $("<p>").text("Wind Speed: " + data.wind.speed + " Mph");
                     var uvIndex = $("<span>").text("Uv Index: " + currentUvData.value);
                     // function to change uv index background color start //
                     $(document).ready(function () {
@@ -158,11 +158,13 @@ function myFunction(cityName) {
 }
 // button listener for search //
 $("#search-button").on("click", function () {
+    $("#hr-hide").css("display", "block");
     let cityName = document.querySelector('#city-search').value;
     myFunction(cityName);
 });
 // button listener for populated list //
 $("#search-history").on("click", function (event) {
+    $("#hr-hide").css("display", "block");
     var btn = event.target
     myFunction(btn.textContent);
 });
