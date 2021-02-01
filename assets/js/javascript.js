@@ -67,7 +67,7 @@ function myFunction(cityName) {
                     var mainDate = moment().format('L');
                     var cityNameEl = $("<h2>").text(data.name);
                     var displayMainDate = cityNameEl.append(" " + mainDate);
-                    var tempEL = $("<p>").text("Tempature: " + data.main.temp + " °F");
+                    var tempEL = $("<p>").text("Temperature: " + data.main.temp + " °F");
                     var humEl = $("<p>").text("Humidity: " + data.main.humidity + " %");
                     var windEl = $("<p>").text("Wind Speed: " + data.wind.speed + " Mph");
                     var uvIndex = $("<span>").text("Uv Index: " + currentUvData.value);

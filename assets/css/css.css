@@ -1,25 +1,18 @@
 
 *{
     box-sizing: border-box;
+    padding-bottom: 6px;
 }
-/*
+
 body {
     font-size: 16px;
     font-family: Verdana, Geneva, Tahoma, sans-serif; 
 }
-h3{
-    font-weight: bold;
-}
-.forecast{ 
-    font-size: 0.9em;
-}
-span{
-    font-size: 1em;
-}
+
 li:hover{
-    background-color: lightslategray;
-    text-decoration: underline;
-}*/
+    background-color: rgba(175, 175, 175, 0.2);
+    
+}
 
 /* start of css */
 .dashboard-title {
@@ -46,6 +39,13 @@ li:hover{
 .city-search-input {
     width: 75%;
 }
+.city-search-input:hover {
+    background-color: rgba(175, 175, 175, 0.2);
+    outline: none;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
 div.col-sm-4 {
     overflow: hidden;
 }
@@ -60,6 +60,7 @@ div.col-sm-4 {
     height: 19rem;
     border: 1px solid rgba(7, 7, 7, 0.2);
     border-radius: 10px;
+    background-color: rgba(175, 175, 175, 0.178);
 }
 /* uv index styles start*/
 span {
@@ -77,18 +78,21 @@ span {
 background-color: green;
 color: white;
 font-weight: bold;
+box-shadow: 0px 0px 8px black;
 }
 
 .moderate {
 background-color: yellow;
 color: grey;
 font-weight: bold;
+box-shadow: 0px 0px 8px black;
 }
 
 .severe {
 background-color: red;
 color: white;
 font-weight: bold;
+box-shadow: 0px 0px 8px black;
 }
 /* uv index styles end*/
 
@@ -111,6 +115,20 @@ img {
 #hr-hide {
     display: none;
 }
+
+h2, h3, ul {
+    text-shadow: 2px 2px rgb(209, 207, 207);
+}
+
+.forcast {
+    background-color: rgba(175, 175, 175, 0.178);
+}
+
+
+
+
+
+
 
 
 
